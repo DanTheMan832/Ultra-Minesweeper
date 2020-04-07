@@ -1,0 +1,45 @@
+.textBody {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	font-size: large;
+	padding-right: 200px;
+	padding-left: 200px;
+}
+ul {
+	list-style-type: none;
+}
+
+.navbar{ 
+	position:fixed;
+	height:100%;
+	background-color: gold;
+	right: 0px;
+	width:180px;
+	top: 0px;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+	padding:0 20px 0 0;
+	margin:0;
+	list-style-type:none;
+	
+  }
+  .menu{
+	text-align:center;
+	color: red;
+	justify-content: center;
+	align-items: center;
+	list-style-type:none;
+	padding-right:20px;
+  }
+  a{
+	color:red
+  }
+  a:visited{text-decoration:none; color:red;}
+  a:hover{text-decoration:none; color:aqua;}
+  a:focus{text-decoration:none; color:red;}
+  a:active{text-decoration:none; color:red;}
+html {
+	background-image: linear-gradient(to right, aqua, teal);
+}

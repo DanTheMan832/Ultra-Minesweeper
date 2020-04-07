@@ -1,0 +1,48 @@
+.textBody {
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	font-size: large;
+	padding-right: 200px;
+	padding-left: 200px;
+}
+ul {
+	list-style-type: none;
+}
+
+.navbar{ 
+	position:fixed;
+	height:100%;
+	background-color: gold;
+	width:180px;
+	right: 0px;
+	top: 0px;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+	
+	margin:0;
+	list-style-type:none;
+	
+  }
+  .menu{
+	padding-right:20px;
+	
+	text-align:center;
+	color: red;
+	justify-content: center;
+	align-items: center;
+	list-style-type:none;
+	
+  }
+  a{
+	color:red
+  }
+  a:visited{text-decoration:none; color:red;}
+  a:hover{text-decoration:none; color:aqua;}
+  a:focus{text-decoration:none; color:red;}
+  a:active{text-decoration:none; color:red;}
+
+html {
+	background-image: linear-gradient(to right, aqua, teal);
+}
