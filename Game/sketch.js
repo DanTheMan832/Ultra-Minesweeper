@@ -1,7 +1,7 @@
 let minesweeperHeight=500
 let minesweeperWidth=500
 let minesweeperTopLeft=[50,50]
-  let gridwidth;
+let gridwidth;
 let gridheight;
 let bombs;
 let grid=[];
@@ -271,7 +271,7 @@ function setup() {
   
   canvas.position(0,0)
    
-    let modeButton=createButton("Toggle Mode (Touchscreen only)")
+  let modeButton=createButton("Toggle Mode (Touchscreen)")
   modeButton.position(minesweeperWidth+minesweeperTopLeft[0]+100,minesweeperTopLeft[1]+minesweeperHeight/4)
   modeButton.touchStarted(changeMode)
   let restartButton=createButton("Restart Game(R)")
