@@ -272,10 +272,10 @@ function setup() {
   canvas.position(0,0)
    
   let modeButton=createButton("Toggle Mode (Touchscreen)")
-  modeButton.position(minesweeperWidth+minesweeperTopLeft[0]+100,minesweeperTopLeft[1]+minesweeperHeight/4)
+  modeButton.position(minesweeperWidth+minesweeperTopLeft[0]+80,minesweeperTopLeft[1]+minesweeperHeight/4)
   modeButton.touchStarted(changeMode)
   let restartButton=createButton("Restart Game(R)")
-  restartButton.position(minesweeperWidth+minesweeperTopLeft[0]+100,minesweeperTopLeft[1]+minesweeperHeight/2)
+  restartButton.position(minesweeperWidth+minesweeperTopLeft[0]+80,minesweeperTopLeft[1]+minesweeperHeight/2)
   restartButton.mousePressed(Restart)
   restartButton.touchStarted(Restart)
   let easyButton=createButton("Easy")
@@ -317,22 +317,22 @@ function draw() {
   drawgrid(grid,gridwidth,gridheight)
    textSize(15)
   if(game_finished==false&&actions>0){
-  text(((millis()-initialTime)/1000).toFixed(2),minesweeperTopLeft[0]+minesweeperWidth+50,minesweeperHeight/2+minesweeperTopLeft[1])
+  text(((millis()-initialTime)/1000).toFixed(2),minesweeperTopLeft[0]+minesweeperWidth+30,minesweeperHeight/2+minesweeperTopLeft[1])
   }
   else if(game_finished==false&&actions==0){
-    text("0.00",minesweeperTopLeft[0]+minesweeperWidth+50,minesweeperHeight/2+minesweeperTopLeft[1])
+    text("0.00",minesweeperTopLeft[0]+minesweeperWidth+30,minesweeperHeight/2+minesweeperTopLeft[1])
   }
  else{
    
-    text(finalTime,minesweeperTopLeft[0]+minesweeperWidth+50,minesweeperHeight/2+minesweeperTopLeft[1])
+    text(finalTime,minesweeperTopLeft[0]+minesweeperWidth+30,minesweeperHeight/2+minesweeperTopLeft[1])
   }
   text("TOTAL MINES: "+bombs.toString()+"\nFLAGS PLACED: "+flags.toString(),minesweeperWidth/2+minesweeperTopLeft[0],30+minesweeperHeight+minesweeperTopLeft[1])
   text(gameStatus,minesweeperTopLeft[0]+minesweeperWidth/2,minesweeperTopLeft[1]+minesweeperHeight+80)
   textAlign(LEFT)
-  text("Current mode: "+mode,minesweeperWidth+minesweeperTopLeft[0]+100,minesweeperTopLeft[1]+minesweeperHeight/4+50)
+  text("Current mode: "+mode,minesweeperWidth+minesweeperTopLeft[0]+80,minesweeperTopLeft[1]+minesweeperHeight/4+50)
   textAlign(CENTER)
   rectMode(RADIUS)
- text("Click the 'How To Play' link on the right hand side to learn how the game works and what the controls are.",minesweeperWidth+minesweeperTopLeft[0]+100,minesweeperTopLeft[1]+minesweeperHeight/2+50,125,250)
+ text("Click the 'How To Play' link on the right hand side to learn how the game works and what the controls are.",minesweeperWidth+minesweeperTopLeft[0]+80,minesweeperTopLeft[1]+minesweeperHeight/2+50,125,250)
   rectMode(CORNER)
   textAlign(LEFT,CENTER)
   text("Current difficulty: "+diff,120,22)
