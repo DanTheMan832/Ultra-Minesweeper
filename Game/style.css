@@ -1,4 +1,7 @@
 
+html{
+	clear:both;
+}
 canvas {
   display: block;
   justify-content: center;
@@ -16,12 +19,13 @@ ul {
 	list-style-type: none;
 }
 .navbar{ 
+	
 	position:fixed;
 	height:100%;
 	background-color: gold;
 	width:180px;
-	right: 0px;
-	top: 0px;
+	right: 10px;
+	top: 10px;
 	text-align:center;
 	justify-content: center;
 	align-items: center;
@@ -32,7 +36,7 @@ ul {
   }
   .menu{
 	padding-right:20px;
-	
+	position:relative;
 	text-align:center;
 	color: red;
 	justify-content: center;
