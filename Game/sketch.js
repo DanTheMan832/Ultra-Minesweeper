@@ -51,7 +51,7 @@ class cell{
     }
       if(checkForWin(grid)){
         noLoop()
-        document.getElementById("vConsole").innerHTML="YOU WIN! YOUR TIME: "+(millis()/1000).toFixed(2)+" seconds"
+        
         console.log("YOU WIN!")
         gameStatus="You Win!"
         game_finished=true
